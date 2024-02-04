@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include big_bash_event *.css
+recursive-include big_bash_event *.csv
+recursive-include big_bash_event *.html
+recursive-include big_bash_event *.ico
+recursive-include big_bash_event *.js
+recursive-include big_bash_event *.json
+recursive-include big_bash_event *.md
+recursive-include big_bash_event *.png
+recursive-include big_bash_event *.py
+recursive-include big_bash_event *.svg
+recursive-include big_bash_event *.txt
+recursive-exclude big_bash_event *.pyc

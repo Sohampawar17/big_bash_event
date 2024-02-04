@@ -1,0 +1,239 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Tlc_{#####}",
+ "creation": "2023-12-28 18:37:34.013512",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "email",
+  "company_name",
+  "whatsapp_mobile_number",
+  "city",
+  "tlc_level",
+  "program_attending",
+  "bazar_kaladalanbodh_event_attent",
+  "gaurav_event_attent",
+  "vijaypath_event_attent",
+  "bodh_event_attent",
+  "gala_dinner_attend",
+  "food_choice_your_self",
+  "drink_choice_your_self",
+  "guest_gaurav_excluding_you",
+  "guest_for_gala_dinner",
+  "guest_veg_food_choice",
+  "guest_nonveg_food_choice",
+  "guest_jain_food_choice",
+  "breakfast_sun_morning",
+  "lunch_for_sun",
+  "qr_code",
+  "qr_image",
+  "tlc_member",
+  "registration_date",
+  "pdf_name",
+  "mobile_no_email",
+  "mobemail"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "whatsapp_mobile_number",
+   "fieldtype": "Data",
+   "label": "WhatsApp Mobile Number",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Select",
+   "label": "City",
+   "options": "Sangli\nKolhapur\nPune\nNashik\nAhmednagar\nChhatrapati Sambhajinagar",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tlc_level",
+   "fieldtype": "Select",
+   "label": "TLC Level",
+   "options": "Micro\nLC\nSLC1\nSLC2\nSLC3\nTLC\nHonorary Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "program_attending",
+   "fieldtype": "Heading",
+   "label": "Which program are you attending?"
+  },
+  {
+   "fieldname": "gala_dinner_attend",
+   "fieldtype": "Select",
+   "label": "Are you attending Gala Dinner?",
+   "options": "Yes\nNo"
+  },
+  {
+   "default": "0",
+   "fieldname": "guest_gaurav_excluding_you",
+   "fieldtype": "Int",
+   "label": "How many guest are expected to join with you for Gaurav excluding you?"
+  },
+  {
+   "fieldname": "food_choice_your_self",
+   "fieldtype": "Select",
+   "label": "Food Choice for yourself",
+   "options": "Not Required\nVegetarian\nJain\nNon-Veg",
+   "reqd": 1
+  },
+  {
+   "fieldname": "drink_choice_your_self",
+   "fieldtype": "Select",
+   "label": "Drink Choice for yourself (Drinks are paid)",
+   "options": "Not Required\nAlcohol\nCold Drink",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qr_code",
+   "fieldtype": "Small Text",
+   "label": "QR Code"
+  },
+  {
+   "fieldname": "qr_image",
+   "fieldtype": "Image",
+   "label": "QR Image",
+   "options": "qr_code"
+  },
+  {
+   "fieldname": "tlc_member",
+   "fieldtype": "Select",
+   "label": "TLC Member",
+   "options": "Yes\nNo"
+  },
+  {
+   "default": "Today",
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date"
+  },
+  {
+   "fieldname": "pdf_name",
+   "fieldtype": "Data",
+   "label": "PDF Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "guest_for_gala_dinner",
+   "fieldtype": "Int",
+   "label": "How many guest are expected to attend Gala dinner excluding you? (Guest coupons are paid)"
+  },
+  {
+   "default": "0",
+   "fieldname": "guest_veg_food_choice",
+   "fieldtype": "Int",
+   "label": "Veg - Food Choice"
+  },
+  {
+   "default": "0",
+   "fieldname": "guest_nonveg_food_choice",
+   "fieldtype": "Int",
+   "label": "Non-Veg - Food Choice"
+  },
+  {
+   "fieldname": "guest_jain_food_choice",
+   "fieldtype": "Int",
+   "label": "Jain - Food Choice"
+  },
+  {
+   "default": "0",
+   "fieldname": "bazar_kaladalanbodh_event_attent",
+   "fieldtype": "Check",
+   "label": "Bazar & Kaladalan Opening (Day 1 - 9.30 AM)"
+  },
+  {
+   "default": "0",
+   "fieldname": "gaurav_event_attent",
+   "fieldtype": "Check",
+   "label": "Gaurav (Day 1 - 3.30 PM)"
+  },
+  {
+   "default": "0",
+   "fieldname": "vijaypath_event_attent",
+   "fieldtype": "Check",
+   "label": "Vijaypath (Day 2 - 8.30 AM)"
+  },
+  {
+   "default": "0",
+   "fieldname": "bodh_event_attent",
+   "fieldtype": "Check",
+   "label": "Bodh (Day 2 - 2.30 PM)"
+  },
+  {
+   "fieldname": "breakfast_sun_morning",
+   "fieldtype": "Select",
+   "label": "Are you taking breakfast on Sunday Morning?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "lunch_for_sun",
+   "fieldtype": "Select",
+   "label": "Are you taking for Sunday lunch?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "mobile_no_email",
+   "fieldtype": "Data",
+   "label": "Mobile No email",
+   "unique": 1
+  },
+  {
+   "fieldname": "mobemail",
+   "fieldtype": "Data",
+   "label": "mobemail",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-24 11:18:14.114191",
+ "modified_by": "Administrator",
+ "module": "Big Bash Event",
+ "name": "Member Registration",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
